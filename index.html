@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D T K</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 20px;
+            height: auto;
+        }
+        .video-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-container {
+            width: 100%;
+            background-color: black;
+            padding: 10px;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+        }
+        .more-videos {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .more-videos h3 {
+            margin-bottom: 10px;
+        }
+        .video-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .video-list img {
+            width: 150px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .prestasi-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-left: 20px;
+        }
+        .prestasi-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Darbukaaaaaaaaaaa</div>
+    <div class="container">
+        <div class="video-section">
+            <div class="video-container">
+                <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/bJQ-xLljm2w?si=y898T5M5NgJ8BEo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="prestasi-container">
+            <button onclick="changeVideo('https://www.youtube.com/embed/bJQ-xLljm2w?si=6DcNg_STgG3q8vUe')">Mas Hasan</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/MNMsEZkucR0?si=VnlNpuodM4sVTWWA')">Mas Pijii</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/VLZtVUN1kSU?si=2VyfjDA8iVfZfYBU')">Mas Ali Kribo</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/ikStINcStOM?si=4seqRB1GJ3ltNYNq')">Habibi Habsyi</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/FmsK08Fuwc4?si=1PWPHXWgN_mKvUdJ')">Mas Arman Arrozi</button>
+        </div>
+    </div>
+    <div class="footer">Welcome DTK ROLL Mania 🔥</div>
+
+    <script>
+        function changeVideo(url) {
+            document.getElementById('main-video').src = url;
+        }
+    </script>
+</body>
+</html>
+
